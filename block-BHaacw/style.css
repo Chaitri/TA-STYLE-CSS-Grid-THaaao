@@ -1,0 +1,163 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* CUSTOM STYLES */
+
+body {
+    background-color: rgb(254, 214, 255);
+    font-family: 'Noto Sans JP', sans-serif;
+    line-height: 1.5;
+    padding-bottom: 100px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+/* HEADER */
+
+header h1{
+    padding: 2rem 0;
+    text-align: center;
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
+.nav {
+    background-color: white;
+    padding: 1rem 0;
+    margin-bottom: 3rem;
+}
+
+ul {
+    display: grid;
+    grid-template-columns: repeat(6,  1fr);
+    gap: 1rem;
+    place-items: center;
+}
+
+li a {
+    text-decoration: none;
+    color: rgb(99, 0, 71);
+}
+
+/* MAIN */
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 2rem;
+    grid-template-areas: "sidebar-l-top main sidebar-r-top" 
+                         "sidebar-l-bottom main sidebar-r-middle"
+                         "sidebar-l-bottom main sidebar-r-bottom";
+}
+
+.sidebar-l-top {
+    grid-area: sidebar-l-top;
+}
+
+.sidebar-l-bottom {
+    grid-area: sidebar-l-bottom;
+}
+
+.main {
+    grid-area: main;
+}
+
+.sidebar-r-top {
+    grid-area: sidebar-r-top;
+}
+
+.sidebar-r-middle {
+    grid-area: sidebar-r-middle;
+}
+
+.sidebar-r-bottom {
+    grid-area: sidebar-r-bottom;
+}
+
+.card {
+    background-color: white;
+    padding: 1rem;
+}
+
+.card h2 {
+    font-weight: 700;
+    margin: 1rem 0;
+}
+
+.card img {
+    width: 100%;
+    margin: 1rem 0;
+}
+
+.main img {
+    border-radius: 40%;
+}
+
+.main p {
+    margin: 2rem 0;
+}
+
+.link {
+    display: block;
+    color: red;
+    margin: 1rem 0;
+}
+
+.selected.link {
+    background-color: red;
+    color: white;
+    margin: 0;
+    padding: 1rem 1rem;
+}
+
+
