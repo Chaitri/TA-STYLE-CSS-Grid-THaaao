@@ -89,6 +89,10 @@ li a {
     color: rgb(99, 0, 71);
 }
 
+li a:hover {
+    color: rgb(255, 64, 201);;
+}
+
 /* MAIN */
 
 main {
@@ -161,3 +165,26 @@ main {
 }
 
 
+/* MEDIA QUERIES */
+
+@media screen and ( max-width: 968px) {
+    main {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:"sidebar-l-top  sidebar-r-top" 
+                         "sidebar-l-bottom  sidebar-r-middle"
+                         "sidebar-l-bottom  sidebar-r-bottom"
+                         "main .";
+    }
+}
+
+@media screen and ( max-width: 768px) {
+    main {
+        grid-template-columns: 1fr ;
+        grid-template-areas: "sidebar-l-top"
+        "sidebar-l-bottom"
+        "main"
+        "sidebar-r-top"
+        "sidebar-r-middle"
+        "sidebar-r-bottom";
+    }
+}
