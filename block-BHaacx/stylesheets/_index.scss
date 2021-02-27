@@ -1,3 +1,7 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
 body {
     font-family: $font-family;
     line-height: 1.5;
@@ -19,9 +23,9 @@ a {
     text-decoration: none;
 }
 
-// img {
-//     width: 100%;
-// }
+img {
+    width: 100%;
+}
 
 .btn {
     display: inline-block;
@@ -110,6 +114,181 @@ a {
             margin: 2rem 0;
             color: #c5bbb4;
             line-height: 1.7;
+        }
+    }
+}
+
+// INTRO
+
+.intro {
+
+    article {
+        padding: 2rem;
+
+        h2 {
+            font-size: 1.7rem;
+            font-weight: 300;
+            margin: 1rem 0;
+        }
+
+        
+    }
+
+    .intro-content {
+        grid-column: span 2;
+
+        .sub-heading {
+            color: $secondary;
+            font-size: 0.8rem;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            color: #979797;
+            margin: 1rem 0;
+        }
+    }
+
+    img {
+        height: 100%;
+        // width: 200%;
+        background-size: cover;
+        // border: 3px solid black;
+    }
+
+    .skills {
+        background-color: $secondary;
+        color: white;
+
+        .skill-tags {
+            font-weight: 100;
+            font-size: 0.9rem;
+            margin-bottom: 2rem;
+        }
+
+        .skill-item {
+            // margin: 1rem 0;
+            font-weight: 700;
+            padding: 0.5rem 0;
+        }
+
+        .skill-name {
+            color: black;
+        }
+
+        .line {
+            height: 2px;
+            background-color: black;
+            margin-bottom: 1rem;
+        }
+
+        .line-frontend {
+            width: 90%;
+        }
+
+        .line-backend {
+            width: 70%;
+        }
+
+        .line-html {
+            width: 80%;
+        }
+    }
+
+    
+    
+}
+
+// INTERESTS
+
+.interests {
+
+    .interest-item {
+        text-align: center;
+        padding: 2rem;
+        color: white;
+
+        i {
+            font-size: 2rem;
+        }
+    
+        h2, p {
+            font-weight: 100;
+            margin: 1rem 0;
+        }
+    
+        p {
+            font-size: 0.8rem;
+            line-height: 1.7;
+        }
+    }
+
+    .design {
+        background-color: $secondary;
+    }
+
+    .media {
+        background-color: $primary;
+    }
+
+    .mobile {
+        background-color: $tertiary;
+    }
+
+    .coding {
+        color: black;
+    }
+}
+
+// EXPERIENCES
+
+.experiences {
+
+    img {
+        grid-column: span 2;
+        width: 100%;
+    }
+
+    article {
+        grid-column: span 2;
+        padding: 3rem;
+        background-color: $primary;
+        color: white;
+
+        h2 {
+            font-size: 1.7rem;
+            font-weight: 300;
+            margin: 1rem 0;
+        }
+
+        .info-exp {
+            font-size: 0.7rem;
+            font-weight: 100;
+        }
+
+        .exp-item {
+            width: 60%;
+            margin: 1rem 0;
+        }
+
+        i {
+            font-size: 2rem;
+            margin-right: 1rem;
+        }
+
+        h4 {
+            font-weight: 100;
+            font-size: 1.2rem;
+        }
+        
+        span {
+            color: black;
+            font-size: 0.8rem;
+            font-weight: 700;
+        }
+
+        p {
+            font-size: 0.7rem;
         }
     }
 }

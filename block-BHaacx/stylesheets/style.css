@@ -52,6 +52,11 @@ table {
   border-spacing: 0;
 }
 
+*, *::after, *::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 body {
   font-family: "Noto Sans JP", sans-serif;
   line-height: 1.5;
@@ -77,6 +82,10 @@ body {
 
 a {
   text-decoration: none;
+}
+
+img {
+  width: 100%;
 }
 
 .btn {
@@ -162,5 +171,157 @@ a {
   margin: 2rem 0;
   color: #c5bbb4;
   line-height: 1.7;
+}
+
+.intro article {
+  padding: 2rem;
+}
+
+.intro article h2 {
+  font-size: 1.7rem;
+  font-weight: 300;
+  margin: 1rem 0;
+}
+
+.intro .intro-content {
+  grid-column: span 2;
+}
+
+.intro .intro-content .sub-heading {
+  color: #ecaf4e;
+  font-size: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+.intro .intro-content p {
+  color: #979797;
+  margin: 1rem 0;
+}
+
+.intro img {
+  height: 100%;
+  background-size: cover;
+}
+
+.intro .skills {
+  background-color: #ecaf4e;
+  color: white;
+}
+
+.intro .skills .skill-tags {
+  font-weight: 100;
+  font-size: 0.9rem;
+  margin-bottom: 2rem;
+}
+
+.intro .skills .skill-item {
+  font-weight: 700;
+  padding: 0.5rem 0;
+}
+
+.intro .skills .skill-name {
+  color: black;
+}
+
+.intro .skills .line {
+  height: 2px;
+  background-color: black;
+  margin-bottom: 1rem;
+}
+
+.intro .skills .line-frontend {
+  width: 90%;
+}
+
+.intro .skills .line-backend {
+  width: 70%;
+}
+
+.intro .skills .line-html {
+  width: 80%;
+}
+
+.interests .interest-item {
+  text-align: center;
+  padding: 2rem;
+  color: white;
+}
+
+.interests .interest-item i {
+  font-size: 2rem;
+}
+
+.interests .interest-item h2, .interests .interest-item p {
+  font-weight: 100;
+  margin: 1rem 0;
+}
+
+.interests .interest-item p {
+  font-size: 0.8rem;
+  line-height: 1.7;
+}
+
+.interests .design {
+  background-color: #ecaf4e;
+}
+
+.interests .media {
+  background-color: #fc683e;
+}
+
+.interests .mobile {
+  background-color: #161616;
+}
+
+.interests .coding {
+  color: black;
+}
+
+.experiences img {
+  grid-column: span 2;
+  width: 100%;
+}
+
+.experiences article {
+  grid-column: span 2;
+  padding: 3rem;
+  background-color: #fc683e;
+  color: white;
+}
+
+.experiences article h2 {
+  font-size: 1.7rem;
+  font-weight: 300;
+  margin: 1rem 0;
+}
+
+.experiences article .info-exp {
+  font-size: 0.7rem;
+  font-weight: 100;
+}
+
+.experiences article .exp-item {
+  width: 60%;
+  margin: 1rem 0;
+}
+
+.experiences article i {
+  font-size: 2rem;
+  margin-right: 1rem;
+}
+
+.experiences article h4 {
+  font-weight: 100;
+  font-size: 1.2rem;
+}
+
+.experiences article span {
+  color: black;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.experiences article p {
+  font-size: 0.7rem;
 }
 /*# sourceMappingURL=style.css.map */
