@@ -23,14 +23,17 @@ a {
     text-decoration: none;
 }
 
-// img {
-//     width: 100%;
-// }
+img {
+    height: 100%;
+    width: 100%;
+    background-size: contain;
+}
 
 .btn {
     display: inline-block;
     padding: 1rem 2rem;
     border-radius: 2rem;
+    margin: 2rem 0;
 }
 
 .btn-primary {
@@ -57,6 +60,14 @@ a {
 .name {
     font-weight: 700;
     letter-spacing: 2px;
+
+    a {
+        color: black;
+    }
+
+    a:hover {
+        color: $secondary;
+    }
 }
 
 .navbar {
@@ -72,6 +83,10 @@ a {
     }
 }
 
+#toggle, .bars {
+    display: none;
+}
+
 // MAIN
 
 .grid-container {
@@ -84,7 +99,7 @@ a {
     img {
         grid-column: span 2; 
         background-size: contain;
-        width: 150%;
+        width: 100%;
     }
 
     article {
@@ -130,8 +145,6 @@ a {
             font-weight: 300;
             margin: 1rem 0;
         }
-
-        
     }
 
     .intro-content {
@@ -150,11 +163,9 @@ a {
     }
 
     img {
-        height: 150%;
-        width: 150%;
+        height: 100%;
+        width: 100%;
         background-size: cover;
-        // border: 3px solid black;
-        overflow: hidden;
     }
 
     .skills {
@@ -168,7 +179,6 @@ a {
         }
 
         .skill-item {
-            // margin: 1rem 0;
             font-weight: 700;
             padding: 0.5rem 0;
         }
@@ -195,9 +205,6 @@ a {
             width: 80%;
         }
     }
-
-    
-    
 }
 
 // INTERESTS
@@ -351,4 +358,187 @@ a {
         }
     }
 
+}
+
+// CONTACT
+
+.contact-panel {
+    background: $primary;
+    color: white;
+    grid-column: span 2; 
+    padding: 3rem;
+
+    h2 {
+        font-size: 1.7rem;
+        font-weight: 300;
+        margin-bottom: 1rem;
+    }
+
+    p {
+        font-size: 0.7rem;
+        margin-top: 0.5rem;
+    }
+
+    input , textarea{
+        display: block;
+        margin: 1rem 0;
+        outline: none;
+        border: none;
+        background-color: $primary;
+        padding: 0.5rem 0;
+        border-bottom: 1px solid #ecaf4e;
+        width: 100%;
+    }
+
+    input::placeholder, textarea::placeholder {
+        color: #feded5;
+        font-size: 0.7rem;
+        font-family: $font-family;
+    }
+
+    input[type="submit"] {
+        background: white;
+        width: 50%;
+        border-radius: 1rem;
+    }
+
+    input[type="submit"]:hover {
+        box-shadow: 0 0 5px white;
+    }
+}  
+
+.visit {
+    background-color: $tertiary;
+    color: white;
+    padding: 3rem;
+
+    h3 {
+        font-size: 1.4rem;
+        font-weight: 300;
+        margin-bottom: 1rem; 
+    }
+
+    p {
+        font-weight: 100;
+        font-size: 0.74rem;
+        margin-bottom: 1rem;
+    }
+
+    a {
+        color: $secondary;
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    i {
+        margin-right: 1rem;
+    }
+
+    .contact-item {
+        margin: 2rem 0;
+        justify-content: flex-start;
+        font-weight: 300;
+        font-size: 0.8;
+    }
+}
+
+// MAP
+
+.map {
+    background-color: $primary;
+    text-align: center;
+    padding: 3rem 0;
+}
+
+// FOOTER
+
+.footer {
+    padding: 5rem 0;
+    text-align: center;
+
+    p {
+        color: #6d6d6d;
+        font-weight: 300;
+        font-size: 0.8rem;
+        margin: 2rem 0;
+    }
+
+    i {
+        margin: 0 1rem;
+        color: #9a9a9a;
+    }
+
+    i:hover {
+        color: $primary;
+    }
+}
+
+// MEDIA QUERIES
+
+@media screen and (max-width: 768px) {
+
+    .header {
+        position: relative;
+        top: 0;
+        padding: 1rem 0;
+
+        .navbar {
+            display: none;
+        }
+
+        #toggle:checked ~ .navbar {
+            display: inline-block;
+        }
+
+        .bars {
+            display: inline-block;
+            color: #ecaf4e;
+            z-index: 10; 
+        }
+
+        .navbar {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            top: 0;
+            right: 0;
+            width: 100vw;
+            height: 100%;
+            background: rgba(0,0,0, 0.8);
+            padding:150px 0;
+            z-index: 9; 
+            
+        }
+
+        .navbar ul {
+            flex-direction: column;
+        }
+
+        .navbar li {
+            margin: 1rem 0;
+        }
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr;
+        grid-auto-flow: row;
+    }
+
+    .hero {
+        
+        article {
+            h3 {
+                margin-top: 3rem;
+            }
+        }
+    }
+
+    .intro , .contact {
+        img {
+            grid-column: span 2;
+        }
+    }
 }
