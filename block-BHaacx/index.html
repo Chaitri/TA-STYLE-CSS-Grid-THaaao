@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7d51f361a6.js" crossorigin="anonymous"></script>
+    <link href="stylesheets/style.css" rel="stylesheet">
+    <title>Stimulus</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container flex">
+            <div class="name">
+                <a href="#hero">Stimulus</a>
+            </div>
+            <label class="bars" for="toggle">
+                <i class="fas fa-bars"></i>
+            </label>
+            <input type="checkbox" id="toggle">
+            <nav class="navbar">
+                <ul class="flex">
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#intro">About Me</a></li>
+                    <li><a href="#experiences">Experiences</a></li>
+                    <li><a href="#contact">Testimonial</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="hero grid-container" id="hero">
+            <img src="assets/media/home-img.jpg" alt="home img">
+            <article>
+                <h3>Welcome to my website</h3>
+                <h2>Hello, I am <strong>Stimulus</strong> currently based in New York City</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, et adipisci! Possimus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, et adipisci! Possimus.</p>
+                <a class="btn btn-primary" href="#">Get Started</a>
+            </article>
+        </section>
+        <section class="intro grid-container" id="intro">
+            <article class="intro-content">
+                <h2>Donec Auctor</h2>
+                <p class="sub-heading">Lorem ipsum dolor sit amet consectetur</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, quidem ipsa soluta ratione.</p>
+                <p>Sunt velit aut ipsum autem neque laborum molestias tempore, perferendis sint cupiditate libero. Blanditiis, ea. Ipsam esse.</p>
+            </article>
+            <img src="assets/media/about-img2.jpg" alt="about">
+            <article class="skills">
+                <h2>My Skills</h2>
+                <p class="skill-tags">Photoshop , HTML CSS JS , Web Design</p>
+                <div class="flex skill-item">
+                    <p class="skill-name">Frontend Design</p>
+                    <p>90%</p>
+                </div>
+                <div class="line line-frontend"></div>
+                <div class="flex skill-item">
+                    <p class="skill-name">Backend Processing</p>
+                    <p>70%</p>
+                </div>
+                <div class="line line-backend"></div>
+                <div class="flex skill-item">
+                    <p class="skill-name">HTML5 and CSS5</p>
+                    <p>80%</p>
+                </div>
+                <div class="line line-html"></div>
+            </article>
+        </section>
+        <section class="interests grid-container">
+            <div class="interest-item design">
+                <i class="fas fa-desktop"></i>
+                <h2>Interface Design</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat nam mollitia sequi libero minus.</p>
+            </div>
+            <div class="interest-item media">
+                <i class="fas fa-paper-plane"></i>
+                <h2>Media Strategy</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat nam mollitia sequi libero minus.</p>
+            </div>
+            <div class="interest-item mobile">
+                <i class="fas fa-mobile-alt"></i>
+                <h2>Mobile App</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat nam mollitia sequi libero minus.</p>
+            </div>
+            <div class="interest-item coding">
+                <i class="fab fa-html5"></i>
+                <h2>Coding</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat nam mollitia sequi libero minus.</p>
+            </div>
+        </section>
+        <section class="experiences grid-container" id="experiences">
+            <img src="assets/media/experience-img.jpg" alt="experience-img">
+            <article>
+                <h2>My Experiences</h2>
+                <p class="info-exp">Previous companies and my tasks</p>
+                <div class="flex exp-item">
+                    <i class="fas fa-desktop"></i>
+                    <div class="experience-info">
+                        <h4>Graphic Designer <span>2014 Jul - 2015 Sep</span><h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa dolore ex earum maxime ipsa. Lorem ipsum dolor sit amet consectetur adipisicing. </p>
+                    </div>
+                </div>
+                <div class="flex exp-item">
+                    <i class="fas fa-desktop"></i>
+                    <div class="experience-info">
+                        <h4>Web Designer <span>2015 Oct - 2017 Jan</span><h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa dolore ex earum maxime ipsa. Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <section class="education grid-container">
+            <article>
+                <h2>My Education</h2>
+                <p class="info-edu">Lorem ipsum dolor sit amet</p>
+                <div class="flex edu-item">
+                    <i class="fas fa-desktop"></i>
+                    <div class="education-info">
+                        <h4>Master in Design <span>2012 Jan - 2014 May</span><h4>
+                        <p>Lorem ipsum dolor sit amet. Quam eius blanditiis ratione quae dolorum illum porro, optio laboriosam possimus.</p>
+                    </div>
+                </div>
+                <div class="flex edu-item">
+                    <i class="fas fa-desktop"></i>
+                    <div class="education-info">
+                        <h4>Bachelor of Arts <span>2008 May - 2011 Dec</span><h4>
+                        <p>Lorem ipsum dolor sit amet. Quam eius blanditiis ratione quae dolorum illum porro, optio laboriosam possimus.</p>
+                    </div>
+                </div>
+            </article>
+            <img src="assets/media/education-img.jpg" alt="education">
+        </section>
+        <section class="contact grid-container" id="contact">
+            <div class="contact-panel">
+                <h2>Say Hello</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name">
+                    <input type="email" name="Email" placeholder="Your Email">
+                    <textarea rows="5" placeholder="Write Your Messsage"></textarea>
+                    <input type="submit" value="Send">
+                </form>
+            </div>
+            <img src="assets/media/contact-img2.jpg" alt="contact">
+            <div class="visit">
+                <h3>Visit My Office</h3>
+                <p>456, New Street, 22000, New York City, USA</p>
+                <h3>Contact Us</h3>
+                <div class="flex contact-item">
+                    <i class="fas fa-phone-alt"></i>
+                    <a href="tel:+0101100220">01-0110-0220</a>
+                </div>
+                <div class="flex contact-item">
+                    <i class="far fa-envelope"></i>
+                    <a href="mailto:hello@company.co">hello@company.co</a>
+                </div>
+                <div class="flex contact-item">
+                    <i class="fas fa-globe-asia"></i>
+                    <a href="#">company.co</a>
+                </div>
+            </div>
+        </section>
+        <section class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d497699.99741284817!2d77.35073230456733!3d12.95384771284859!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1670c9b44e6d%3A0xf8dfc3e8517e4fe0!2sBengaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1614617823931!5m2!1sen!2sin" width="80%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>Copyright &copy; 2021 Your Company | Design templatemo</p>
+        <nav>
+            <a href=""><i class="fab fa-facebook-f"></i></a>
+            <a href=""><i class="fab fa-twitter"></i></a>
+            <a href=""><i class="fab fa-google-plus-g"></i></a>
+            <a href=""><i class="fas fa-globe"></i></a>
+            <a href=""><i class="fab fa-linkedin-in"></i></a>
+        </nav>
+    </footer>
+</body>
+</html>

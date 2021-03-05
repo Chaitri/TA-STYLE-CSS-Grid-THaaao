@@ -1,0 +1,578 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+*, *::after, *::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Noto Sans JP", sans-serif;
+  line-height: 1.5;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+  background-size: contain;
+}
+
+.btn {
+  display: inline-block;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  margin: 2rem 0;
+}
+
+.btn-primary {
+  border: 2px solid #161616;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.7rem;
+  color: #161616;
+  font-weight: 700;
+}
+
+.btn:hover {
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+}
+
+.header {
+  position: absolute;
+  width: 100%;
+  top: 2rem;
+}
+
+.name {
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.name a {
+  color: black;
+}
+
+.name a:hover {
+  color: #ecaf4e;
+}
+
+.navbar li a {
+  color: #afa6a0;
+  margin-left: 2rem;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+
+.navbar li a:hover {
+  color: goldenrod;
+}
+
+#toggle, .bars {
+  display: none;
+}
+
+.grid-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.hero img {
+  grid-column: span 2;
+  background-size: contain;
+  width: 100%;
+}
+
+.hero article {
+  grid-column: span 2;
+  background-color: #f5e3d7;
+  padding: 0 3rem;
+}
+
+.hero article h3 {
+  color: #ada9a7;
+  font-size: 0.7rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-top: 10rem;
+}
+
+.hero article h2 {
+  font-size: 2rem;
+  font-weight: 300;
+  margin: 1rem 0;
+}
+
+.hero article strong {
+  font-weight: 500;
+}
+
+.hero article p {
+  margin: 2rem 0;
+  color: #c5bbb4;
+  line-height: 1.7;
+}
+
+.intro article {
+  padding: 2rem;
+}
+
+.intro article h2 {
+  font-size: 1.7rem;
+  font-weight: 300;
+  margin: 1rem 0;
+}
+
+.intro .intro-content {
+  grid-column: span 2;
+}
+
+.intro .intro-content .sub-heading {
+  color: #ecaf4e;
+  font-size: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+.intro .intro-content p {
+  color: #979797;
+  margin: 1rem 0;
+}
+
+.intro img {
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+}
+
+.intro .skills {
+  background-color: #ecaf4e;
+  color: white;
+}
+
+.intro .skills .skill-tags {
+  font-weight: 100;
+  font-size: 0.9rem;
+  margin-bottom: 2rem;
+}
+
+.intro .skills .skill-item {
+  font-weight: 700;
+  padding: 0.5rem 0;
+}
+
+.intro .skills .skill-name {
+  color: black;
+}
+
+.intro .skills .line {
+  height: 2px;
+  background-color: black;
+  margin-bottom: 1rem;
+}
+
+.intro .skills .line-frontend {
+  width: 90%;
+}
+
+.intro .skills .line-backend {
+  width: 70%;
+}
+
+.intro .skills .line-html {
+  width: 80%;
+}
+
+.interests .interest-item {
+  text-align: center;
+  padding: 2rem;
+  color: white;
+}
+
+.interests .interest-item i {
+  font-size: 2rem;
+}
+
+.interests .interest-item h2, .interests .interest-item p {
+  font-weight: 100;
+  margin: 1rem 0;
+}
+
+.interests .interest-item p {
+  font-size: 0.8rem;
+  line-height: 1.7;
+}
+
+.interests .design {
+  background-color: #ecaf4e;
+}
+
+.interests .media {
+  background-color: #fc683e;
+}
+
+.interests .mobile {
+  background-color: #161616;
+}
+
+.interests .coding {
+  color: black;
+  background-color: white;
+}
+
+.experiences img {
+  grid-column: span 2;
+  width: 100%;
+  height: 100%;
+}
+
+.experiences article {
+  grid-column: span 2;
+  padding: 3rem;
+  background-color: #fc683e;
+  color: white;
+}
+
+.experiences article h2 {
+  font-size: 1.7rem;
+  font-weight: 300;
+  margin: 1rem 0;
+}
+
+.experiences article .info-exp {
+  font-size: 0.7rem;
+  font-weight: 100;
+}
+
+.experiences article .exp-item {
+  font-weight: 300;
+  margin: 2rem 0;
+}
+
+.experiences article i {
+  font-size: 2rem;
+  margin-right: 1rem;
+}
+
+.experiences article h4 {
+  font-weight: 100;
+  font-size: 1.3rem;
+}
+
+.experiences article p {
+  font-size: 0.7rem;
+  margin-top: 0.5rem;
+}
+
+.experiences article span {
+  color: #161616;
+  font-weight: 700;
+  font-size: 0.7rem;
+}
+
+.education img {
+  grid-column: span 2;
+  width: 100%;
+  height: 100%;
+}
+
+.education article {
+  grid-column: span 2;
+  padding: 3rem;
+  background-color: #ecaf4e;
+  color: white;
+}
+
+.education article h2 {
+  font-size: 1.7rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+
+.education article .info-edu {
+  font-size: 0.7rem;
+  font-weight: 100;
+}
+
+.education article .edu-item {
+  font-weight: 300;
+  margin: 2rem 0;
+}
+
+.education article i {
+  font-size: 2rem;
+  margin-right: 1rem;
+}
+
+.education article h4 {
+  font-weight: 100;
+  font-size: 1.3rem;
+}
+
+.education article p {
+  font-size: 0.7rem;
+  margin-top: 0.5rem;
+}
+
+.education article span {
+  color: #8c710d;
+  font-weight: 700;
+  font-size: 0.7rem;
+}
+
+.contact-panel {
+  background: #fc683e;
+  color: white;
+  grid-column: span 2;
+  padding: 3rem;
+}
+
+.contact-panel h2 {
+  font-size: 1.7rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+
+.contact-panel p {
+  font-size: 0.7rem;
+  margin-top: 0.5rem;
+}
+
+.contact-panel input, .contact-panel textarea {
+  display: block;
+  margin: 1rem 0;
+  outline: none;
+  border: none;
+  background-color: #fc683e;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #ecaf4e;
+  width: 100%;
+}
+
+.contact-panel input::-webkit-input-placeholder, .contact-panel textarea::-webkit-input-placeholder {
+  color: #feded5;
+  font-size: 0.7rem;
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+.contact-panel input:-ms-input-placeholder, .contact-panel textarea:-ms-input-placeholder {
+  color: #feded5;
+  font-size: 0.7rem;
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+.contact-panel input::-ms-input-placeholder, .contact-panel textarea::-ms-input-placeholder {
+  color: #feded5;
+  font-size: 0.7rem;
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+.contact-panel input::placeholder, .contact-panel textarea::placeholder {
+  color: #feded5;
+  font-size: 0.7rem;
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+.contact-panel input[type="submit"] {
+  background: white;
+  width: 50%;
+  border-radius: 1rem;
+}
+
+.contact-panel input[type="submit"]:hover {
+  -webkit-box-shadow: 0 0 5px white;
+          box-shadow: 0 0 5px white;
+}
+
+.visit {
+  background-color: #161616;
+  color: white;
+  padding: 3rem;
+}
+
+.visit h3 {
+  font-size: 1.4rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+
+.visit p {
+  font-weight: 100;
+  font-size: 0.74rem;
+  margin-bottom: 1rem;
+}
+
+.visit a {
+  color: #ecaf4e;
+  text-decoration: none;
+}
+
+.visit a:hover {
+  text-decoration: underline;
+}
+
+.visit i {
+  margin-right: 1rem;
+}
+
+.visit .contact-item {
+  margin: 2rem 0;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  font-weight: 300;
+  font-size: 0.8;
+}
+
+.map {
+  background-color: #fc683e;
+  text-align: center;
+  padding: 3rem 0;
+}
+
+.footer {
+  padding: 5rem 0;
+  text-align: center;
+}
+
+.footer p {
+  color: #6d6d6d;
+  font-weight: 300;
+  font-size: 0.8rem;
+  margin: 2rem 0;
+}
+
+.footer i {
+  margin: 0 1rem;
+  color: #9a9a9a;
+}
+
+.footer i:hover {
+  color: #fc683e;
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    position: relative;
+    top: 0;
+    padding: 1rem 0;
+  }
+  .header .navbar {
+    display: none;
+  }
+  .header #toggle:checked ~ .navbar {
+    display: inline-block;
+  }
+  .header .bars {
+    display: inline-block;
+    color: #ecaf4e;
+    z-index: 10;
+  }
+  .header .navbar {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    width: 100vw;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 150px 0;
+    z-index: 9;
+  }
+  .header .navbar ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .header .navbar li {
+    margin: 1rem 0;
+  }
+  .grid-container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    grid-auto-flow: row;
+  }
+  .hero article h3 {
+    margin-top: 3rem;
+  }
+  .intro img, .contact img {
+    grid-column: span 2;
+  }
+}
+/*# sourceMappingURL=style.css.map */
