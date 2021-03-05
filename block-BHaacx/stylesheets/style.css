@@ -84,10 +84,17 @@ a {
   text-decoration: none;
 }
 
+img {
+  height: 100%;
+  width: 100%;
+  background-size: contain;
+}
+
 .btn {
   display: inline-block;
   padding: 1rem 2rem;
   border-radius: 2rem;
+  margin: 2rem 0;
 }
 
 .btn-primary {
@@ -115,6 +122,14 @@ a {
   letter-spacing: 2px;
 }
 
+.name a {
+  color: black;
+}
+
+.name a:hover {
+  color: #ecaf4e;
+}
+
 .navbar li a {
   color: #afa6a0;
   margin-left: 2rem;
@@ -124,6 +139,10 @@ a {
 
 .navbar li a:hover {
   color: goldenrod;
+}
+
+#toggle, .bars {
+  display: none;
 }
 
 .grid-container {
@@ -136,7 +155,7 @@ a {
 .hero img {
   grid-column: span 2;
   background-size: contain;
-  width: 150%;
+  width: 100%;
 }
 
 .hero article {
@@ -195,10 +214,9 @@ a {
 }
 
 .intro img {
-  height: 150%;
-  width: 150%;
+  height: 100%;
+  width: 100%;
   background-size: cover;
-  overflow: hidden;
 }
 
 .intro .skills {
@@ -374,5 +392,187 @@ a {
   color: #8c710d;
   font-weight: 700;
   font-size: 0.7rem;
+}
+
+.contact-panel {
+  background: #fc683e;
+  color: white;
+  grid-column: span 2;
+  padding: 3rem;
+}
+
+.contact-panel h2 {
+  font-size: 1.7rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+
+.contact-panel p {
+  font-size: 0.7rem;
+  margin-top: 0.5rem;
+}
+
+.contact-panel input, .contact-panel textarea {
+  display: block;
+  margin: 1rem 0;
+  outline: none;
+  border: none;
+  background-color: #fc683e;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #ecaf4e;
+  width: 100%;
+}
+
+.contact-panel input::-webkit-input-placeholder, .contact-panel textarea::-webkit-input-placeholder {
+  color: #feded5;
+  font-size: 0.7rem;
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+.contact-panel input:-ms-input-placeholder, .contact-panel textarea:-ms-input-placeholder {
+  color: #feded5;
+  font-size: 0.7rem;
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+.contact-panel input::-ms-input-placeholder, .contact-panel textarea::-ms-input-placeholder {
+  color: #feded5;
+  font-size: 0.7rem;
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+.contact-panel input::placeholder, .contact-panel textarea::placeholder {
+  color: #feded5;
+  font-size: 0.7rem;
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+.contact-panel input[type="submit"] {
+  background: white;
+  width: 50%;
+  border-radius: 1rem;
+}
+
+.contact-panel input[type="submit"]:hover {
+  -webkit-box-shadow: 0 0 5px white;
+          box-shadow: 0 0 5px white;
+}
+
+.visit {
+  background-color: #161616;
+  color: white;
+  padding: 3rem;
+}
+
+.visit h3 {
+  font-size: 1.4rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+
+.visit p {
+  font-weight: 100;
+  font-size: 0.74rem;
+  margin-bottom: 1rem;
+}
+
+.visit a {
+  color: #ecaf4e;
+  text-decoration: none;
+}
+
+.visit a:hover {
+  text-decoration: underline;
+}
+
+.visit i {
+  margin-right: 1rem;
+}
+
+.visit .contact-item {
+  margin: 2rem 0;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  font-weight: 300;
+  font-size: 0.8;
+}
+
+.map {
+  background-color: #fc683e;
+  text-align: center;
+  padding: 3rem 0;
+}
+
+.footer {
+  padding: 5rem 0;
+  text-align: center;
+}
+
+.footer p {
+  color: #6d6d6d;
+  font-weight: 300;
+  font-size: 0.8rem;
+  margin: 2rem 0;
+}
+
+.footer i {
+  margin: 0 1rem;
+  color: #9a9a9a;
+}
+
+.footer i:hover {
+  color: #fc683e;
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    position: relative;
+    top: 0;
+    padding: 1rem 0;
+  }
+  .header .navbar {
+    display: none;
+  }
+  .header #toggle:checked ~ .navbar {
+    display: inline-block;
+  }
+  .header .bars {
+    display: inline-block;
+    color: #ecaf4e;
+    z-index: 10;
+  }
+  .header .navbar {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    width: 100vw;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 150px 0;
+    z-index: 9;
+  }
+  .header .navbar ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .header .navbar li {
+    margin: 1rem 0;
+  }
+  .grid-container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    grid-auto-flow: row;
+  }
+  .hero article h3 {
+    margin-top: 3rem;
+  }
+  .intro img, .contact img {
+    grid-column: span 2;
+  }
 }
 /*# sourceMappingURL=style.css.map */
